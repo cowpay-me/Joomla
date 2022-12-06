@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <fieldset
+            name="basic"
+            label="COM_COWPAY_FIELDSET_CONFIG_CLIENT_OPTIONS_LABEL"
+            description="COM_COWPAY_FIELDSET_CONFIG_CLIENT_OPTIONS_DESC"
+    >
+        <field name="spacer0" type="spacer" label="Main config"/>
+        <field name="is_live" type="radio" default="0" label="Is Live"
+               description="Check it only when you need to use CowPay live integration"
+               class="btn-group btn-group-yesno">
+            <option value="1">ON</option>
+            <option value="0">OFF</option>
+        </field>
+
+        <field name="merchant_code" type="text" size="50" default="" label="Merchant Code" description="Merchant Code"/>
+        <field name="merchant_hash_key" type="text" size="50" default="" label="Merchant hash Key"
+               description="Merchant hash Key"/>
+        <field name="merchant_token" type="text" size="50" default="" label="Merchant Token"
+               description="Merchant Token"/>
+
+        <field name="fawry" type="radio" default="0" label="Fawry" description="" class="btn-group btn-group-yesno">
+            <option value="1">ON</option>
+            <option value="0">OFF</option>
+        </field>
+        <field name="fawry_description" type="text" size="50" default="pay at fawry" label="API Secret"
+               description="API Secret"/>
+
+        <field name="card" type="radio" default="0" label="Credit Card" description=""
+               class="btn-group btn-group-yesno">
+            <option value="1">ON</option>
+            <option value="0">OFF</option>
+        </field>
+        <field name="card_description" type="text" size="50" default="pay by card" label="card option text"
+               description="text that write under card option in payment page"/>
+
+        <field name="cash" type="radio" default="0" label="Cash Collection" description=""
+               class="btn-group btn-group-yesno">
+            <option value="1">ON</option>
+            <option value="0">OFF</option>
+        </field>
+        <field name="cash_description" type="text" size="50" default="cash collection"
+               label="cash collection option text"
+               description="text that write under cash collection option in payment page"/>
+
+    </fieldset>
+</config>
